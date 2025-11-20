@@ -8,14 +8,14 @@
 <svelte:head>
 	<link rel="icon" href={favicon} />
 </svelte:head>
-<div class="flex min-h-screen flex-col text-white bg-[#002234]" style="font-family: 'Poppins'">
+<div class="flex min-h-screen w-full flex-col text-white bg-[#002234] overflow-x-hidden" style="font-family: 'Poppins'">
 	<header class="px-6, flex h-[58px] w-full items-center justify-between bg-[#002234] p-6">
 		<img src="/vechain-logo.svg" alt="Vechain logo" class="h-6 w-[131px]" />
 		<div class="mr-4 text-white">EN</div>
 	</header>
 	<main class="flex-1 bg-[#002234]">{@render children()}</main>
 	<footer class="h-[260px] w-full items-center justify-between bg-black flex flex-col">
-		<img src="/ATP-x-VeChain-2.svg" alt="Vechain X ATP" class="h-[69px] w-[390px] mt-8" />
+		<img src="/ATP-x-VeChain-2.svg" alt="Vechain X ATP" class="h-[69px] w-full max-w-[390px] px-4 mt-8" />
 		<div class="text-white text-center mb-8">
 			<a href="/" class = "hover:underline"><b>PRIVACY POLICY</b></a>
 			<span>-</span>
